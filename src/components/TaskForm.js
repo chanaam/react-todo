@@ -27,8 +27,8 @@ function TaskForm(props){
 
 
     return <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="Add a task here"></input>
-            <input type='submit' value="x"></input>
+            <input type="text" name="text" placeholder="Add a task here"></input>
+            <input type='submit' value="+"></input>
         </form>
    
 }
