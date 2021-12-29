@@ -1,25 +1,26 @@
+
 import logo from './logo.svg';
 import './App.css';
+import Clock from './components/Clock';
+import Title from './components/Title';
+import ToDo from './components/ToDo';
+import { useState } from 'react';
+
+
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const [show,setShow]=useState()
+
+  return <div>
+     {show? <Clock/>:''}
+     <button onClick={()=>setShow(!show)}>jjj</button>
+      
+      <Title/>
+      <ToDo/>
+      
     </div>
-  );
 }
 
 export default App;
