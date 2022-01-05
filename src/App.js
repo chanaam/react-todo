@@ -1,5 +1,4 @@
 
-import logo from './logo.svg';
 import './App.css';
 import Clock from './components/Clock';
 import Title from './components/Title';
