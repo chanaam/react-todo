@@ -6,7 +6,7 @@ import {
 
 export default function Clock() {
 
-    let interval;
+    //let interval;
 
     const [time, setTime] = useState(new Date())
 
@@ -14,7 +14,7 @@ export default function Clock() {
 
     function startClock() {
 
-        interval = setInterval(() => {
+        let interval = setInterval(() => {
             setTime(new Date())
         }, 1000)
 
